@@ -1,0 +1,42 @@
+<resources>
+
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="app_name">Trims</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="appHelp">This is the help screen for Trims</string>
+    <string name="appHelpExtra">Basically\, if you need help on using this app, you probably shouldn\'t be using it</string>
+    <string name="appDisplayName">Trims</string>
+    <string name="appDesc">Trims provides the user with a quick and easy way to manage a list of HairCuts </string>
+    <string name="appMoreInfo">For more information about Trims or to provide feedback please visit our website.</string>
+    <string name="appAbout">About Trims</string>
+    <string name="appWebsite">github.com/andrewCullen136</string>
+    <string name="developer">Developed by Andrew Cullen</string>
+
+    <string name="searchHaircutsLbl">Search Haircuts</string>
+    <string name="favouritesHaircutsLbl">Favourite Haircut</string>
+    <string name="addAHaircutLbl">HairCut Check In</string>
+    <string name="addHaircutBtnLbl">Add Haircut</string>
+    <string name="saveHaircutsBtn">Save Haircut</string>
+    <string name="recentlyViewedLbl">Recently Added Trims</string>
+    <string name="hairCutStyleLbl">Style :</string>
+    <string name="barbersLbl">Barbers :</string>
+    <string name="cutPriceLbl">Price :</string>
+    <string name="cutRatingLbl">Star Rating</string>
+    <string name="cutDetailsLbl">Full Hair Cut Details</string>
+    <string name="informationLbl">Information</string>
+    <string name="emptyMessageLbl">You have no Haircuts added, go get a Trim!</string>
+    <string name="deleteTrimsLbl">Delete Trims</string>
+    <string name="editTrimLbl">Edit Haircut</string>
+
+    <string-array name="trimTypes">
+        <item>All Types</item>
+        <item>Favourites</item>
+        <item>\> 3\* Rating</item>
+    </string-array>
+
+
+</resources>

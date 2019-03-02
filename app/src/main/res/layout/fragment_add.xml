@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/addLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ie.cm.fragments.AddFragment">
+
+    <TextView
+        android:id="@+id/addfooter"
+        android:layout_width="0dp"
+        android:layout_height="36dp"
+        android:background="@color/colorPrimary"
+        android:paddingTop="5dp"
+        android:text="@string/appWebsite"
+        android:textAlignment="center"
+        android:textColor="@color/colorFontWhite"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.523"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/addPriceTV"
+        android:layout_width="99dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:paddingTop="10dp"
+        android:text="@string/cutPriceLbl"
+        android:textAlignment="textEnd"
+        android:textColor="@color/colorFontBlack"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addShopTV" />
+
+    <TextView
+        android:id="@+id/addShopTV"
+        android:layout_width="99dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:paddingTop="10dp"
+        android:text="@string/barbersLbl"
+        android:textAlignment="textEnd"
+        android:textColor="@color/colorFontBlack"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addNameTV" />
+
+    <TextView
+        android:id="@+id/addNameTV"
+        android:layout_width="99dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="70dp"
+        android:paddingTop="10dp"
+        android:text="@string/hairCutStyleLbl"
+        android:textAlignment="textEnd"
+        android:textColor="@color/colorFontBlack"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/addStyleET"
+        android:layout_width="189dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="32dp"
+        android:ems="10"
+        android:hint="Enter Cut Style "
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.447"
+        app:layout_constraintStart_toEndOf="@+id/addNameTV"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/addPriceET"
+        android:layout_width="187dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:ems="10"
+        android:hint="Enter Price"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/addPriceTV"
+        app:layout_constraintTop_toBottomOf="@+id/addShopET" />
+
+    <EditText
+        android:id="@+id/addShopET"
+        android:layout_width="189dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:ems="10"
+        android:hint="Enter Barbers"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.441"
+        app:layout_constraintStart_toEndOf="@+id/addShopTV"
+        app:layout_constraintTop_toBottomOf="@+id/addStyleET" />
+
+    <RatingBar
+        android:id="@+id/addRatingBar"
+        android:layout_width="242dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="48dp"
+        android:rating="1"
+        android:stepSize="0.5"
+        app:layout_constraintBottom_toTopOf="@+id/editfooter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addPriceET"
+        app:layout_constraintVertical_bias="0.213" />
+
+    <ImageButton
+        android:id="@+id/addTrimBtn"
+        android:elevation="5dp"
+        android:layout_width="79dp"
+        android:layout_height="84dp"
+        android:layout_marginTop="68dp"
+        android:background="@color/colorFontOffWhite"
+        android:src="@drawable/add_72"
+        android:text="@string/addHaircutBtnLbl"
+        app:layout_constraintBottom_toTopOf="@+id/editfooter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addRatingBar"
+        app:layout_constraintVertical_bias="0.714" />
+
+</android.support.constraint.ConstraintLayout>
